@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Aksh structured salary data",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "basic": {"type": "number", "minimum": 0},
+    "da": {"type": "number", "minimum": 0},
+    "hra": {"type": "number", "minimum": 0},
+    "special_allowance": {"type": "number", "minimum": 0},
+    "other_allowances": {"type": "number", "minimum": 0},
+    "bonus": {"type": "number", "minimum": 0},
+    "other_income": {"type": "number", "minimum": 0},
+    "gross_salary": {"type": "number", "minimum": 0},
+    "employee_pf": {"type": "number", "minimum": 0},
+    "professional_tax": {"type": "number", "minimum": 0},
+    "80c": {"type": "number", "minimum": 0},
+    "80d": {"type": "number", "minimum": 0},
+    "nps": {"type": "number", "minimum": 0},
+    "tds": {"type": "number", "minimum": 0}
+  }
+}
