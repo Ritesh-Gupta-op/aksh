@@ -1,0 +1,6 @@
+{
+  "name": "Aksh - Salaried Tax Companion & Payslip Decoder",
+  "description": "Decodes payslips, calculates Old vs New tax regimes for FY 2025-26, simulates legal tax savings, and provides grounded tax coaching.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
