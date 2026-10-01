@@ -1,0 +1,16 @@
+{
+  "financial_year": "FY 2026-27",
+  "assessment_year": "AY 2027-28",
+  "verified": false,
+  "source": "Placeholder copied from FY 2025-26 pending Finance Act and Income Tax Department notification verification",
+  "standard_deduction": {"old": 50000, "new": 75000},
+  "cess_rate": 0.04,
+  "rebate": {"old": {"threshold": 500000, "maximum": 12500}, "new": {"threshold": 1200000, "maximum": 60000}, "exclude_special_rate": true},
+  "old_slabs": {"under_60": [[250000, 0], [500000, 0.05], [1000000, 0.20], [null, 0.30]], "60_79": [[300000, 0], [500000, 0.05], [1000000, 0.20], [null, 0.30]], "80_plus": [[500000, 0], [1000000, 0.20], [null, 0.30]]},
+  "new_slabs": [[400000, 0], [800000, 0.05], [1200000, 0.10], [1600000, 0.15], [2000000, 0.20], [2400000, 0.25], [null, 0.30]],
+  "surcharge": {"thresholds": [[5000000, 0.10], [10000000, 0.15], [20000000, 0.25], [50000000, 0.37]], "new_top_rate": 0.25, "capital_gains_cap": 0.15},
+  "deduction_limits": {"80c": 150000, "80ccd1b": 50000, "80d_self_non_senior": 25000, "80d_self_senior": 50000, "80d_parents_non_senior": 25000, "80d_parents_senior": 50000, "80tta": 10000, "80ttb": 50000, "80u": 125000, "section_24b_self_occupied": 200000},
+  "special_rates": {"stcg_111a": 0.20, "ltcg_112a": 0.125, "ltcg_112a_exemption": 125000, "other_ltcg": 0.125, "other_stcg": "normal", "lottery": 0.30},
+  "employer_nps_percent": {"old": 0.10, "new": 0.14},
+  "verified_values": {"slabs": false, "standard_deduction": false, "cess_rate": false, "special_rates": false, "employer_nps_percent": false}
+}

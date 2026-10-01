@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "title": "Complete mandatory repository inspection and Phase 0 summary",
+      "status": "done"
+    },
+    {
+      "title": "Wait for confirmation on the proposed engine scope",
+      "status": "done"
+    },
+    {
+      "title": "Implement the production-grade tax engine after approval",
+      "status": "done"
+    },
+    {
+      "title": "Integrate context prompts and verify tests after approval",
+      "status": "done"
+    }
+  ],
+  "updated_at": "2026-10-01T10:36:42.737Z",
+  "session_id": "01a0f630-b3ad-7544-ba36-863e087f39c6"
+}

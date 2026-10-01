@@ -1,0 +1,17 @@
+[
+  {"name":"salaried_8l","profile":{"income_sources":{"other_salary":800000}},"expected":{"old_tax":"65000","new_tax":"0","winner":"NEW"}},
+  {"name":"salaried_12l","profile":{"income_sources":{"other_salary":1200000}},"expected":{"old_tax":"163800","new_tax":"0","winner":"NEW"}},
+  {"name":"salaried_12_5l","profile":{"income_sources":{"other_salary":1250000}},"expected":{"old_tax":"179400","new_tax":"0","winner":"NEW"}},
+  {"name":"salaried_15l","profile":{"income_sources":{"other_salary":1500000}},"expected":{"old_tax":"257400","new_tax":"97500","winner":"NEW"}},
+  {"name":"salaried_25l","profile":{"income_sources":{"other_salary":2500000}},"expected":{"old_tax":"569400","new_tax":"319800","winner":"NEW"}},
+  {"name":"salaried_60l","profile":{"income_sources":{"other_salary":6000000}},"expected":{"old_tax":"1827540","new_tax":"1552980","winner":"NEW"}},
+  {"name":"salaried_1_2cr","profile":{"income_sources":{"other_salary":12000000}},"expected":{"old_tax":"4063410","new_tax":"3776370","winner":"NEW"}},
+  {"name":"hra_metro","profile":{"income_sources":{"basic":800000,"hra_received":200000},"rent_paid":180000,"city_type":"metro"},"expected":{"old_tax":"85800","new_tax":"0","winner":"NEW"}},
+  {"name":"deductions_claimed","profile":{"income_sources":{"other_salary":1500000},"deductions":{"80c":150000,"80ccd1b":50000,"health_self":25000}},"expected":{"old_tax":"187200","new_tax":"97500","winner":"NEW"}},
+  {"name":"senior_citizen","profile":{"age":65,"income_sources":{"other_salary":1500000}},"expected":{"old_tax":"254800","new_tax":"97500","winner":"NEW"}},
+  {"name":"super_senior","profile":{"age":82,"income_sources":{"other_salary":1500000}},"expected":{"old_tax":"244400","new_tax":"97500","winner":"NEW"}},
+  {"name":"capital_gains","profile":{"income_sources":{"other_salary":1500000,"stcg_111a":100000,"ltcg_112a":300000}},"expected":{"old_tax":"300950","new_tax":"141050","winner":"NEW"}},
+  {"name":"home_loan_cap","profile":{"income_sources":{"other_salary":1500000},"property_interest":300000,"self_occupied":true},"expected":{"old_tax":"195000","new_tax":"97500","winner":"NEW"}},
+  {"name":"nri","profile":{"residential_status":"NRI","income_sources":{"other_salary":600000}},"expected":{"old_tax":"23400","new_tax":"6500","winner":"NEW"}},
+  {"name":"business_warning","profile":{"employment_type":"business","business_income_flag":true,"income_sources":{"business_income":1500000}},"expected":{"old_tax":"273000","new_tax":"109200","winner":"NEW"}}
+]

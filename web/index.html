@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fffaf5" />
+  <title>Aksh — Your friendly tax coach</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Aksh home"><span class="brand-mark">✦</span><span>Aksh</span></a>
+      <nav class="nav-tabs" aria-label="Primary navigation">
+        <button class="nav-tab active" data-view="home">Overview</button>
+        <button class="nav-tab" data-view="chat">Ask Aksh</button>
+        <button class="nav-tab" data-view="upi">UPI check</button>
+      </nav>
+      <span class="local-badge"><span class="status-dot"></span>Private & local</span>
+    </header>
+
+    <main id="top">
+      <section class="hero" id="home-view">
+        <div class="hero-copy">
+          <p class="eyebrow">FY 2025–26 · SALARIED INDIA</p>
+          <h1>Tax feels lighter<br /><em>when you know it.</em></h1>
+          <p class="hero-text">Paste your salary slip and get a clear, kind explanation of your regimes, deductions, and next steps. Your data stays on this computer.</p>
+          <div class="hero-actions"><button class="primary-btn" id="hero-analyze">Analyze my payslip <span>→</span></button><button class="text-btn" id="load-sample">Try a sample slip</button></div>
+        </div>
+        <div class="hero-card" aria-label="Aksh promise">
+          <div class="card-top"><span>AKSH / TAX NOTE</span><span>01</span></div>
+          <div class="card-line"></div>
+          <p class="card-quote">No scary jargon.<br /><strong>Just your next<br />best step.</strong></p>
+          <div class="card-stamp">LOCAL<br />FIRST</div>
+        </div>
+      </section>
+
+      <section class="workspace" id="analyzer">
+        <div class="section-heading"><div><p class="eyebrow">START HERE</p><h2>Show me your salary</h2></div><p class="muted">We read the words. Python does the math.</p></div>
+        <div class="analyzer-grid">
+          <div class="input-panel panel">
+            <label for="slip-text">Salary slip text</label>
+            <textarea id="slip-text" placeholder="Paste the text from your salary slip here…\n\nExample: Basic ₹50,000\nHRA ₹25,000\nGross Earnings ₹95,000"></textarea>
+            <div class="input-footer"><span id="char-count">0 characters</span><button class="primary-btn small" id="analyze-btn">Analyze slip <span>→</span></button></div>
+            <div id="analysis-error" class="error" role="alert" hidden></div>
+          </div>
+          <aside class="how-card"><span class="number">01</span><h3>Paste it as-is</h3><p>Monthly or annual is fine. Keep the labels and numbers exactly as they appear.</p><span class="number">02</span><h3>Get the picture</h3><p>Aksh explains the comparison without making up a single number.</p><span class="number">03</span><h3>Choose calmly</h3><p>See practical next steps, with the maths handled by the tax engine.</p></aside>
+        </div>
+      </section>
+
+      <section class="results" id="results" hidden>
+        <div class="section-heading"><div><p class="eyebrow">YOUR SNAPSHOT</p><h2>Here’s what your numbers say</h2></div><button class="text-btn" id="new-analysis">← New analysis</button></div>
+        <div id="warnings"></div>
+        <div class="regime-grid" id="regime-grid"></div>
+        <div class="results-lower"><div class="panel details-panel"><div class="panel-heading"><h3>What we found</h3><span class="pill">annualized</span></div><div id="components" class="component-list"></div></div><div class="panel plan-panel"><div class="panel-heading"><h3>Your gentle action plan</h3><span class="pill coral">up to 5 ideas</span></div><div id="tips"></div></div></div>
+      </section>
+
+      <section class="conversation panel" id="chat-view" hidden><div class="section-heading"><div><p class="eyebrow">A FRIENDLY SECOND OPINION</p><h2>Ask Aksh anything</h2></div><span class="local-badge"><span class="status-dot"></span>Powered by local Gemma</span></div><div id="chat-messages" class="chat-messages"><div class="chat-bubble aksh">Hi, I’m Aksh. Analyze your salary first, then ask me anything about what you see. I’ll keep it simple.</div></div><form id="chat-form" class="chat-form"><input id="chat-input" autocomplete="off" placeholder="Try “Which regime looks better?”" /><button class="primary-btn small">Send <span>→</span></button></form><div id="chat-error" class="error" role="alert" hidden></div></section>
+
+      <section class="upi-section panel" id="upi-view" hidden><div class="section-heading"><div><p class="eyebrow">OPTIONAL CHECK</p><h2>Find possible deductions in UPI</h2></div><p class="muted">Nothing leaves your computer.</p></div><p class="body-copy">Upload a bank CSV to spot possible health premiums, investments, NPS, and rent payments. Every result needs proof before you claim it.</p><label class="file-drop" for="upi-file"><span class="file-icon">↥</span><strong id="file-label">Choose a CSV file</strong><small>We only read it locally in your browser.</small><input id="upi-file" type="file" accept=".csv,text/csv" /></label><button class="primary-btn" id="upi-btn" disabled>Check transactions <span>→</span></button><div id="upi-results"></div><div id="upi-error" class="error" role="alert" hidden></div></section>
+    </main>
+    <footer><span>Aksh Tax Coach · FY 2025–26</span><span>For complex cases, talk to a qualified CA.</span></footer>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
